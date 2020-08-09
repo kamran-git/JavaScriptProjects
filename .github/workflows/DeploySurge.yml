@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -29,12 +29,12 @@ jobs:
       with:
             node-version: '12'
 
-    # Step to install sure
+    # Step to install surge
 
     - name: Installing Surge
     - run: npm install --global surge
       
     # Deploy application to surge
     - name: Deploying project to surge
-    - run: surge ./ kamran_jsprojects.surge.sh --token ${{ secrets.SURGE_TOKEN}}
+    - run: surge ./kamran_jsprojects.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
