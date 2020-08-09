@@ -36,5 +36,5 @@ jobs:
       
     # Deploy application to surge
     - name: Deploying project to surge
-      run: surge C:\Users\Pc Planet\Documents\GitHub kamran_jsprojects.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge C:\Users\Pc Planet\Documents\GitHub\JavaScriptProjects kamran_jsprojects.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
