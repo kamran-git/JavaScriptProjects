@@ -95,7 +95,7 @@ h2 {
     visibility: visible;
 }
 
-.form button {
+.form-control button {
     cursor: pointer;
     background-color: royalblue;
     border: 2px solid cornsilk;
